@@ -11,6 +11,7 @@ import XDP
 
 class ViewController: UIViewController {
     var helloLabel: UILabel?;
+    var helloButton: UIButton?;
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,12 +20,16 @@ class ViewController: UIViewController {
         helloLabel!.text = "Hello World"
         self.view.addSubview(helloLabel!)
         NSLog("left: %f", helloLabel!.left)
+        
+        helloButton = UIButton(frame: CGRect(x: 100, y: 200, width: 100, height: 100))
+        helloButton!.setTitle("left move", for: .normal)
+        helloButton!.setTitleColor(UIColor.red, for: .normal)
+        helloButton!.addTarget(self, action: #selector(clickLeftMoveButton(button:)), for: .touchUpInside)
+        self.view.addSubview(helloButton!)
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @objc func clickLeftMoveButton(button: UIButton) -> Void {
+        self.helloLabel!.left += 10
     }
-
 }
 
