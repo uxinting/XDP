@@ -10,6 +10,9 @@ DerivedData/
 # OS X
 .DS_Store
 
+# pod
+Pods/
+
 # Xcode
 build/
 *.pbxuser

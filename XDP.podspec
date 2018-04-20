@@ -9,34 +9,27 @@
 Pod::Spec.new do |s|
   s.name             = 'XDP'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of XDP.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+  s.summary          = 'Xinting Develop PlatformKit. 辅助工具类，包括基础算法、安全方法、快捷方法等。'
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+本库用于Swift类APP的基础服务，提供最基本的方法使用，使启动开发更快捷。
+其中包括有：UIView的Frame相关快捷方法；集合类型的安全方法；网络地址相关快捷方法；基础算法；颜色类快捷方法。
                        DESC
 
-  s.homepage         = 'https://github.com/wuxinting/XDP'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.homepage         = 'https://github.com/uxinting/XDP'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'wuxinting' => 'wuxinting@baidu.com' }
+  s.author           = { 'wuxinting' => 'wu.xinting@hotmail.com' }
   s.source           = { :git => 'https://github.com/wuxinting/XDP.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
 
-  s.source_files = 'XDP/Classes/**/*'
+  s.source_files = 'XDP/**/*'
   
   # s.resource_bundles = {
   #   'XDP' => ['XDP/Assets/*.png']
   # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+  s.public_header_files = 'XDP/**/*.h'
+  s.frameworks = 'UIKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end
