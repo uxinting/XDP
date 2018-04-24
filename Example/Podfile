@@ -2,5 +2,7 @@ use_frameworks!
 
 target 'XDP_Example' do
   platform :ios, '9.0'
+  
+  pod 'XDK', :path => '../../../XDK/XDK'
   pod 'XDP', :path => '../'
 end

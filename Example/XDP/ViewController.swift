@@ -8,6 +8,7 @@
 
 import UIKit
 import XDP
+import XDK
 
 class ViewController: UIViewController {
     var helloLabel: UILabel?;
@@ -29,7 +30,8 @@ class ViewController: UIViewController {
     }
 
     @objc func clickLeftMoveButton(button: UIButton) -> Void {
-        self.helloLabel!.left += 10
+        let vc: XReadMusicViewController! = XReadMusicViewController()
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }
 

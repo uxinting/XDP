@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		56D1307D208F32E00011DF05 /* XReadMusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D1307C208F32E00011DF05 /* XReadMusicViewController.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -21,6 +22,7 @@
 		1DE93809E69E98AA691DBA07 /* Pods-XDP_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XDP_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-XDP_Example/Pods-XDP_Example.release.xcconfig"; sourceTree = "<group>"; };
 		35BCC25CA15A3ED585F5F9A8 /* Pods-XDP_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XDP_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XDP_Example/Pods-XDP_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		564EC29CB48F29A743B1D119 /* Pods_XDP_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XDP_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		56D1307C208F32E00011DF05 /* XReadMusicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XReadMusicViewController.swift; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* XDP_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XDP_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
+				56D1307C208F32E00011DF05 /* XReadMusicViewController.swift */,
 			);
 			name = "Example for XDP";
 			path = XDP;
@@ -216,10 +219,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-XDP_Example/Pods-XDP_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/XDK/XDK.framework",
 				"${BUILT_PRODUCTS_DIR}/XDP/XDP.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XDK.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XDP.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,6 +274,7 @@
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				56D1307D208F32E00011DF05 /* XReadMusicViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
