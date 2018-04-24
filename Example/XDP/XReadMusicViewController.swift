@@ -7,12 +7,12 @@
 //
 
 import UIKit
+import XDK
 
-class XReadMusicViewController: UIViewController {
+class XReadMusicViewController: XDKViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor.red
     }
     
 }

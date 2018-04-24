@@ -30,7 +30,7 @@ class ViewController: UIViewController {
     }
 
     @objc func clickLeftMoveButton(button: UIButton) -> Void {
-        let vc: XReadMusicViewController! = XReadMusicViewController()
+        let vc: XReadMusicViewController! =  UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ReadMusic") as! XReadMusicViewController
         self.navigationController?.pushViewController(vc, animated: true)
     }
 }

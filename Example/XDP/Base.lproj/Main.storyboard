@@ -31,7 +31,7 @@
         <!--Read Music View Controller-->
         <scene sceneID="edV-bp-KES">
             <objects>
-                <viewController id="lhz-Du-Rlx" customClass="XReadMusicViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ReadMusic" id="lhz-Du-Rlx" customClass="XReadMusicViewController" customModule="XDP_Example" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="OVW-Cj-hKd"/>
                         <viewControllerLayoutGuide type="bottom" id="Ued-8H-DlN"/>
